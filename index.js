@@ -8,8 +8,8 @@ function mondayWork(activity = "go to the office"){
     return ("This Monday, I will " + activity + ".");
 };
 
-function wrapAdjective(special = "*"){
-    return (function inner(message){
-        return ("You are " + special + message + special + "!");
+function wrapAdjective(flair = "*"){
+    return (function inner(message = "special"){
+        return ("You are " + flair + message + flair + "!");
     })
 };
